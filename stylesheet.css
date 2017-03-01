@@ -86,7 +86,7 @@ transform: translateX(-50%) translateY(-50%);
     }
   }
 
-/*modif CSS*/
+/*modif CSS livraion*/
 .container-fluid.livraison {
     background-color: #ffeae4;
 }
@@ -211,6 +211,68 @@ button.btn.btn-default.btn-chaud.google {
         height: 105px;
     }
 }
-
-
 /***********************************/
+/*modif carte nailletine */
+
+.photo-carte {
+    height: 150px;
+    background-position: 50%, 50%, 50%, 50%;
+    background-size: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 979px) and (min-width: 0px) {
+    .text-middle {
+        font-size: 28px;
+    }
+}
+
+.text-middle {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.titre-container {
+    margin-bottom: 35px;
+}
+
+a {
+    text-decoration: underline;
+    color: #00a396;
+}
+/*modif CSS Footer*/
+footer {
+      background-color: #2e3333;
+}
+.menu-footer li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 10px;
+      font-size: 13px;
+}
+.menu-footer a {
+  text-decoration: none;
+  color: white;
+}
+.menu-footer {
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.btn-footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.footer-reseaux {
+  float: left;
+  list-style: none;
+}
+.footer-reseaux li {
+  list-style: none;
+  display: inline-block;
+
+}
