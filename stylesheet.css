@@ -1,10 +1,16 @@
 body {
   font-family: 'Amiko', sans-serif;
+  font-size: 16px;
 }
 
 h1 {
   font-size: 1em;
   font-weight: bold;
+}
+h3 {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 .titre-W {
     font-size: 40px;
@@ -16,6 +22,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
+
 .header-left {
   background-image: url(img/photo-header1.png);
   background-size: cover;
@@ -75,5 +82,135 @@ transform: translateX(-50%) translateY(-50%);
 }
 @media (min-width: 767px) {
 .form-inline .form-group {
-    display: flex;}
+    display: flex;
+    }
+  }
+
+/*modif CSS*/
+.container-fluid.livraison {
+    background-color: #ffeae4;
 }
+.photo-livraison {
+  background-size: cover;
+    max-width: 100%;
+    background-position: 50% 50%;
+    padding-top: 50%;
+}
+
+/********** Tout Chaud ! ***********/
+
+.container-fluid.chaud {
+    background: #f3f5f5;
+    overflow: hidden;
+    padding: 50px 5px 80px;
+}
+
+.row.row-chaud {
+    margin-bottom: 30px;
+    background: #fff;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+button.btn.btn-default.btn-chaud {
+    background-color: #00ccbc;
+    border: transparent;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 5px 20px;
+    line-height: 2;
+}
+
+button.btn.btn-default.btn-chaud:hover {
+    background-color: #00c1b2;
+}
+
+.col-right-chaud {
+    box-sizing: border-box;
+    padding: 20px 38px 40px 31px;
+}
+
+.col-left-chaud {
+    background-image: url(img/chaud1.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 236px;
+}
+
+.titre-B {
+    margin: 0 0 35px;
+}
+
+.poly {
+    width: 40px;
+    height: 120%;
+    background: #ffffff;
+    transform: rotate(6deg);
+    position: absolute;
+    right: -13px;
+    top: -20px;
+    z-index: 1;
+}
+
+.col-left-chaud2 {
+    background-image: url(img/chaud3.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 236px;
+}
+
+button.btn.btn-default.btn-chaud.apple {
+    width: 135px;
+    height: 40px;
+    margin-right: 7px;
+    background-image: url(img/chaud2.svg);
+    background-position: 0%;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+button.btn.btn-default.btn-chaud.google {
+    width: 135px;
+    height: 40px;
+    background-image: url(img/chaud2.svg);
+    background-position: 100%;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .cont-chaud.container {
+        width: 98%;
+    }
+    h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:766px) {
+    h3 {
+        font-size: 22px;
+    }
+    button.btn.btn-default.btn-chaud {
+        font-size: 14px;
+        padding: 4px 10px;
+        margin-top: 0px;
+    }
+    .col-right-chaud {
+        padding: 0px 0px 11px 20px;
+    }
+    .col-left-chaud {
+        height: 155px;
+    }
+    .p-display {
+        display: none;
+    }
+    .col-left-chaud2 {
+        height: 105px;
+    }
+}
+
+
+/***********************************/
