@@ -12,6 +12,9 @@ h3 {
   font-family: 'Roboto', sans-serif;
   color: black;
 }
+.carte, .livraison, .chaud, .travail {
+  padding-top: 50px;
+}
 .titre-W {
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
@@ -246,6 +249,7 @@ a {
 /*modif CSS Footer*/
 footer {
       background-color: #2e3333;
+      padding-top: 10px;
 }
 .menu-footer li {
       list-style: none;
@@ -263,16 +267,83 @@ footer {
     margin-right: 20px;
     margin-left: 20px;
 }
-.btn-footer {
+.btn-footer1 {
   text-align: center;
   padding-bottom: 20px;
+}
+.btn-footer2 {
+  text-align: center;
+  padding-bottom: 20px;
+  display: none;
+}
+.footer-copyright {
+  font-family: 'Amiko', sans-serif;
+  font-size: 14px;
+  color: #a0918a;
+  float: right;
+  margin-top: 35px;
 }
 .footer-reseaux {
   float: left;
   list-style: none;
+  margin-top: 17px;
+  padding-left: 0px;
 }
 .footer-reseaux li {
   list-style: none;
   display: inline-block;
+  float: left;
+}
+.reseaux {
+    background: url(img/reseaux.svg) no-repeat 0 0;
+    background-size: 80px;
+    border: 1px solid rgba(232,164,16,0.3);
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    display: block;
+    text-indent: -9999em;
+    transition: background-color 0.1s linear;
+}
+.reseaux-TW {
+    background-position: -17px 11px;
+    border-color: rgba(85,172,238,0.7);
+    background-position: -17px -22px;
+    border: none;
+}
+.reseaux-FB {
+    background-position: 14px 10px;
+    border-color: rgba(59,89,152,0.7);
+    background-position: 14px -22px;
+    border: none;
+}
+.reseaux-IN {
+    background-position: -48px 10px;
+    border-color: rgba(81,127,164,0.7);
+    background-position: -48px -22px;
+    border: none;
+}
+.reseaux.reseaux-TW:hover {
+    background-position: -17px -22px;
+    background-color: #55acee;
+    border-color: #55acee;
+}
+.reseaux.reseaux-FB:hover {
+    background-position: 14px -22px;
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+.reseaux.reseaux-IN:hover {
+    background-position: -48px -22px;
+    background-color: #517fa4;
+    border-color: #517fa4;
+}
 
+@media (max-width:766px)  {
+.btn-footer1 {
+    display: none;
+}
+.btn-footer2 {
+  display: block;
+}
 }
