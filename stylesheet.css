@@ -571,3 +571,45 @@ img.logo-vert.shrink {
     border-radius: 10px;
     background-position: 18% 50%;
 }
+@media (min-width:768px) {
+    img.bob {
+        display: none;
+    }
+    .titre-mobile {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+
+    .titre-container {
+        margin-left: 0.5em;
+    }
+    .navbar-default {
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
+    img.logo-vert.shrink {
+        display: none;
+    }
+    .logo.shrink {
+        display: none;
+    }
+    img.logo {
+        display: none;
+    }
+    img.bob {
+        width: 13%;
+        margin-left: -11%;
+        display: block;
+    }
+    p.titre-mobile {
+        font-size: 2em;
+        font-weight: 600;
+        letter-spacing: -2px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
