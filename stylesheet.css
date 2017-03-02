@@ -511,3 +511,63 @@ img.img-travail {
         margin-left: 0.5em;
     }
 }
+/******** navbar ********/
+
+.navbar-default{
+   transition: background-color 0.2s ease;
+   background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+.navbar-default.shrink {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    box-shadow: -1px 0px 4px 0 #b7b7b7;
+}
+button.btn.btn-default.btn-chaud.connexion {
+    background-color: #00ccbc;
+    border: transparent;
+    margin-top: 8px;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 1px 17px;
+    line-height: 2;
+}
+
+ul.nav.navbar-nav.navbar-right {
+    margin: 8px;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+img.logo {
+    width: 53%;
+    margin-top: -0.3em;
+}
+img.logo-vert {
+    width: 53%;
+    margin-top: -42px;
+    display: none;
+}
+
+img.logo-vert.shrink {
+    display: block;
+}
+
+@media (min-width: 768px){
+.navbar-right {
+    background-color: #fff;
+}
+}
+
+.flag::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(img/flag.jpg);
+    background-size: 216px 18px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    border-radius: 10px;
+    background-position: 18% 50%;
+}
